@@ -19,18 +19,17 @@
         </js-module>
 
         <platform name="android">
-
-            <config-file target="res/xml/config.xml" parent="widget">
+            <edit-config target="app/src/main/res/xml/config.xml" parent="widget" mode="merge">
                 <feature name="YoutubeVideoPlayer">
                     <param name="android-package" value="com.bunkerpalace.cordova.YoutubeVideoPlayer"/>
                 </feature>
-            </config-file>
-
-            <config-file target="AndroidManifest.xml" parent="/manifest">
+            </edit-config>
+            
+            <edit-config target="app/src/main/res/xml/config.xml" parent="/manifiest" mode="merge">
                 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-            </config-file>
+            </edit-config>
 
-            <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <edit-config target="app/src/main/AndroidManifest.xml" parent="/manifest/application"  mode="merge">
                 <activity android:name="com.keyes.youtube.OpenYouTubePlayerActivity" android:screenOrientation="landscape"/>
                 <activity
                     android:name="com.bunkerpalace.cordova.YouTubeActivity"
@@ -39,12 +38,12 @@
                     android:launchMode="singleTop"
                     android:theme="@android:style/Theme.Black.NoTitleBar"
                     android:windowSoftInputMode="adjustResize"/>
-            </config-file>
+            </edit-config>
 
-            <source-file src="platforms/android/src/com/bunkerpalace/cordova/YouTubeActivity.java" target-dir="src/com/bunkerpalace/cordova"/>
-            <source-file src="platforms/android/src/com/bunkerpalace/cordova/YoutubeVideoPlayer.java" target-dir="src/com/bunkerpalace/cordova"/>
-            <source-file src="platforms/android/libs/openyoutubeactivity.jar" target-dir="libs"/>
-            <source-file src="platforms/android/libs/YouTubeAndroidPlayerApi.jar" target-dir="libs"/>
+            <source-file src="platforms/android/src/com/bunkerpalace/cordova/YouTubeActivity.java" target="app/src/main/src/com/bunkerpalace/cordova/YouTubeActivity.java" />
+            <source-file src="platforms/android/src/com/bunkerpalace/cordova/YoutubeVideoPlayer.java" target="app/src/main/src/com/bunkerpalace/cordova/YoutubeVideoPlayer.java" />
+            <source-file src="platforms/android/libs/openyoutubeactivity.jar" target="app/src/main/libs/openyoutubeactivity.jar"/>
+            <source-file src="platforms/android/libs/YouTubeAndroidPlayerApi.jar" target="app/src/main/libs/YouTubeAndroidPlayerApi.jar" />
 
         </platform>
 

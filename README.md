@@ -1,27 +1,15 @@
 #Cordova YoutubeVideoPlayer Plugin Fix for android-cordova >= 7.0.0
 
-**Original plugin by @ihadeed
+**Fork plugin @ihadeed**
+
+Install 
+
 **Play Youtube Videos in a native Video Player on Android &amp; iOS.**
-
-**This fork works on Android 6, and does not force landscape mode on Android.**
-
-
-iOS plugin uses **XCDYouTubeKit** by Cédric Luthi:  
-https://github.com/0xced/XCDYouTubeKit
-
-Android version (up to 4.4) uses **OpenYoutubeActivity** by Keyes Labs:  
-https://code.google.com/p/android-youtube-player
-
-Android version (5.0+) uses YouTube Android Player API:
-https://developers.google.com/youtube/android/player/reference/com/google/android/youtube/player/YouTubePlayer
-
-Android with YouTube App Version 111662130 requires a workaround to resolve an App issue:
-https://code.google.com/p/gdata-issues/issues/detail?id=8244
 
 ##Installation
 
 ```sh
-cordova plugin add https://github.com/JonSmart/CordovaYoutubeVideoPlayer
+cordova plugin add https://github.com/rosses/CordovaYoutubeVideoPlayer
 ```
 
 ##Usage

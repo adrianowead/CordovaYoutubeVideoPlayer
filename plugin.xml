@@ -40,10 +40,10 @@
                     android:windowSoftInputMode="adjustResize"/>
             </edit-config>
 
-            <source-file src="platforms/android/src/com/bunkerpalace/cordova/YouTubeActivity.java" target-dir="app/src/main/src/com/bunkerpalace/cordova/YouTubeActivity.java" />
-            <source-file src="platforms/android/src/com/bunkerpalace/cordova/YoutubeVideoPlayer.java" target-dir="app/src/main/src/com/bunkerpalace/cordova/YoutubeVideoPlayer.java" />
-            <source-file src="platforms/android/libs/openyoutubeactivity.jar" target-dir="app/src/main/libs/openyoutubeactivity.jar"/>
-            <source-file src="platforms/android/libs/YouTubeAndroidPlayerApi.jar" target-dir="app/src/main/libs/YouTubeAndroidPlayerApi.jar" />
+            <source-file src="platforms/android/src/com/bunkerpalace/cordova/YouTubeActivity.java" target-dir="app/src/main/src/com/bunkerpalace/cordova" />
+            <source-file src="platforms/android/src/com/bunkerpalace/cordova/YoutubeVideoPlayer.java" target-dir="app/src/main/src/com/bunkerpalace/cordova" />
+            <source-file src="platforms/android/libs/openyoutubeactivity.jar" target-dir="app/src/main/libs"/>
+            <source-file src="platforms/android/libs/YouTubeAndroidPlayerApi.jar" target-dir="app/src/main/libs" />
 
         </platform>
 

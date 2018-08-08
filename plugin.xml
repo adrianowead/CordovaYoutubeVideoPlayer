@@ -25,7 +25,7 @@
                 </feature>
             </edit-config>
             
-            <edit-config target="app/src/main/res/xml/config.xml" parent="/manifiest" mode="merge">
+            <edit-config target="app/src/main/res/xml/config.xml" parent="/manifiest" mode="overwrite">
                 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
             </edit-config>
 

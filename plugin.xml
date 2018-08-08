@@ -29,7 +29,7 @@
                 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
             </edit-config>
 
-            <edit-config target="app/src/main/AndroidManifest.xml" parent="/manifest/application"  mode="merge">
+            <edit-config target="app/src/main/AndroidManifest.xml" parent="/manifest/application" mode="merge">
                 <activity android:name="com.keyes.youtube.OpenYouTubePlayerActivity" android:screenOrientation="landscape"/>
                 <activity
                     android:name="com.bunkerpalace.cordova.YouTubeActivity"
@@ -40,10 +40,10 @@
                     android:windowSoftInputMode="adjustResize"/>
             </edit-config>
 
-            <resource-file src="platforms/android/src/com/bunkerpalace/cordova/YouTubeActivity.java" target="app/src/main/src/com/bunkerpalace/cordova/YouTubeActivity.java" />
-            <resource-file src="platforms/android/src/com/bunkerpalace/cordova/YoutubeVideoPlayer.java" target="app/src/main/src/com/bunkerpalace/cordova/YoutubeVideoPlayer.java" />
-            <resource-file src="platforms/android/libs/openyoutubeactivity.jar" target="app/src/main/libs/openyoutubeactivity.jar"/>
-            <resource-file src="platforms/android/libs/YouTubeAndroidPlayerApi.jar" target="app/src/main/libs/YouTubeAndroidPlayerApi.jar" />
+            <source-file src="platforms/android/src/com/bunkerpalace/cordova/YouTubeActivity.java" target-dir="app/src/main/src/com/bunkerpalace/cordova/YouTubeActivity.java" />
+            <source-file src="platforms/android/src/com/bunkerpalace/cordova/YoutubeVideoPlayer.java" target-dir="app/src/main/src/com/bunkerpalace/cordova/YoutubeVideoPlayer.java" />
+            <source-file src="platforms/android/libs/openyoutubeactivity.jar" target-dir="app/src/main/libs/openyoutubeactivity.jar"/>
+            <source-file src="platforms/android/libs/YouTubeAndroidPlayerApi.jar" target-dir="app/src/main/libs/YouTubeAndroidPlayerApi.jar" />
 
         </platform>
 

@@ -9,7 +9,7 @@ Install
 ##Installation
 
 ```sh
-cordova plugin add https://github.com/rosses/CordovaYoutubeVideoPlayer
+cordova plugin add https://github.com/adrianowead/CordovaYoutubeVideoPlayer
 ```
 
 ##Usage
